@@ -1,7 +1,9 @@
-..\Phalanger\Source\PhpNetCompiler\obj\Debug)\phpc ^
+..\Phalanger\Deployment\Debug\phpc ^
 /target:dll ^
 /pure+ ^
 /lang:CLR ^
 /out:RedBean.dll ^
-/recurse:../redbean\RedBeanPHP ^
-/r:../Phalanger\Source\ClassLibrary\obj\Debug)\PhpNetClassLibrary.dll 2>out.log
+/recurse:..\redbean\RedBeanPHP ^
+/skip:..\redbean\RedBeanPHP\Functions.php ^
+/skip:..\redbean\RedBeanPHP\loader.php ^
+/r:..\Phalanger\Deployment\Debug\PhpNetClassLibrary.dll 2>out.log
